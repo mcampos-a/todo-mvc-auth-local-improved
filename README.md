@@ -1,44 +1,20 @@
-# Introduction
+# Full-stack Todo List
 
-A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so folx can sign up, customize & personalize the app 
+![alt text](image.png)
 
----
+## How It's Made:
 
-> Be sure to add that lovely star 😀 and fork it for your own copy
+**Tech used:** <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
+<img src="https://img.shields.io/static/v1?label=|&message=Node.js&color=3c7f5d&style=plastic&logo=node.js"/>
+<img src= "https://img.shields.io/static/v1?label=|&message=express&color=3c7f5d&style=plastic&logo=express">
+<img src="https://img.shields.io/static/v1?label=|&message=EJS&color=3c7f5d&style=plastic&logo=EJS">
+<img src="https://img.shields.io/static/v1?label=|&message=passport&color=3c7f5d&style=plastic&logo=passport">
 
----
+## Optimizations:
 
-# Objectives
+This project is an improvement to a previous CRUD application. With more time on my hands I want to create a pleasing UI that facilitates the user experience. I also will be exploring methods to incorporate two users logged into the same todo list. Imagine a family shopping list were two or more people can add live items to the list.
 
-- It's a beginner level app created to understand how MVC concept and logins are added
+## Lessons Learned:
 
----
-
-# Who is this for? 
-
-- It's for beginners & intermediates with little more experience, to help understand the various aspects of building a node app with some complex features
-
----
-
-# Packages/Dependencies used 
-
-bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local, validator
-
----
-
-# Install all the dependencies or node packages used for development via Terminal
-
-`npm install` 
-
----
-
-# Things to add
-
-- Create a `.env` file and add the following as `key: value` 
-  - PORT: 2121 (can be any port example: 3000) 
-  - DB_STRING: `your database URI` 
- ---
- 
- Have fun testing and improving it! 😎
-
+Working with my colleague Khan we were able to improve on how the EJS template could allow us to move content from one element to another. Having property value pair the track the status of an object was key to incroporating our solution and creating a smooth manipulation of our database documents.  
 
