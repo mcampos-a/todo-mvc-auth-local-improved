@@ -1,0 +1,15 @@
+h1{
+    color: rgb(0, 153, 255);
+}
+.completed{
+    text-decoration: line-through;
+    color: gray;
+    list-style-type: none;
+} 
+.not{
+    text-decoration: underline;
+}
+
+li{
+    list-style-type: none;
+}

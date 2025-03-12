@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1><%= user.userName %>'s Note Pad</h1>
+
+    <form action="/todos/createTodo" method='POST'>
+        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
+        <input type="submit">
+    </form>
+
+    <h2> You have <%= left %> things left to do.</h2>
+
+    <h2>Todos</h2>
+    <ul>
+    <% todos.forEach( el => { %>
+            <li class='todoItem' data-id='<%=el._id%>'>
+                <% if(el.completed === false){ %>
+                    <span class=''><%= el.todo %></span>
+                    <span class='<%= el.completed === true ? 'completed' : 'not'%>'><input type="checkbox" name="completed" id="">Not completed</span>
+                    <span class='del'> 🗑️ </span>
+                <%  } %>  
+                
+            </li>
+    <% }) %>    
+    </ul>
+
+
+
+
+        <h2>Completed</h2>
+         <ul>
+           
+                <% todos.forEach( el => { %>
+                    <li class='completedTodos' data-id='<%=el._id%>'>
+                        <% if(el.completed === true){ %>
+                            <span class=''><%= el.todo %></span>
+                            <span class='<%= el.completed === false ? 'not' : 'completed'%>'><input type="checkbox" name="completed" id="">Completed</span>
+                            <span class='del'> 🗑️ </span>
+                        <%  } %>  
+                    </li>
+                <% }) %>    
+           
+        </ul>
+
+    <a href="/logout">Logout</a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
